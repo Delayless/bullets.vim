@@ -283,7 +283,7 @@ let g:bullets_checkbox_partials_toggle = 0
 # Mappings
 
 * Insert new bullet in INSERT mode: `<cr>` (Return key)
-* Same as <cr> in case you want to unmap <cr> in INSERT mode (compatibility depends on your terminal emulator): `<C-cr>`
+* Same as <cr> in case you want to unmap <cr> in INSERT mode (compatibility depends on your terminal emulator): `<C-cr>`. Some terminal emulator can't correctlly recognize the keycode for <C-CR>. You can refer to [this article](https://stackoverflow.com/a/42461580/77131) to solve.
 * Insert new bullet in NORMAL mode: `o`
 * Renumber current visual selection: `gN`
 * Renumber entire bullet list containing the cursor in NORMAL mode: gN

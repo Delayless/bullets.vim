@@ -1076,10 +1076,12 @@ augroup TextBulletsMappings
 
   if g:bullets_set_mappings
     " Automatic bullets
-    call s:add_local_mapping(1, 'imap', '<cr>', '<Plug>(bullets-newline)')
-    call s:add_local_mapping(1, 'inoremap', '<C-cr>', '<cr>')
+    " call s:add_local_mapping(1, 'imap', '<cr>', '<Plug>(bullets-newline)')
+    " call s:add_local_mapping(1, 'inoremap', '<C-cr>', '<cr>')
 
-    call s:add_local_mapping(1, 'nmap', 'o', '<Plug>(bullets-newline)')
+	" call s:add_local_mapping(1, 'nmap', 'o', '<Plug>(bullets-newline)')
+	call s:add_local_mapping(1, 'imap', '<c-cr>', '<Plug>(bullets-newline)')
+    call s:add_local_mapping(1, 'nmap', '<LEADER>o', '<Plug>(bullets-newline)')
 
     " Renumber bullet list
     call s:add_local_mapping(1, 'vmap', 'gN', '<Plug>(bullets-renumber)')
@@ -1090,11 +1092,11 @@ augroup TextBulletsMappings
 
     " Promote and Demote outline level
     call s:add_local_mapping(1, 'imap', '<C-t>', '<Plug>(bullets-demote)')
-    call s:add_local_mapping(1, 'nmap', '>>', '<Plug>(bullets-demote)')
-    call s:add_local_mapping(1, 'vmap', '>', '<Plug>(bullets-demote)')
+    " call s:add_local_mapping(1, 'nmap', '>>', '<Plug>(bullets-demote)')
+    " call s:add_local_mapping(1, 'vmap', '>', '<Plug>(bullets-demote)')
     call s:add_local_mapping(1, 'imap', '<C-d>', '<Plug>(bullets-promote)')
-    call s:add_local_mapping(1, 'nmap', '<<', '<Plug>(bullets-promote)')
-    call s:add_local_mapping(1, 'vmap', '<', '<Plug>(bullets-promote)')
+    " call s:add_local_mapping(1, 'nmap', '<<', '<Plug>(bullets-promote)')
+    " call s:add_local_mapping(1, 'vmap', '<', '<Plug>(bullets-promote)')
   end
 
   for s:custom_key_mapping in g:bullets_custom_mappings
