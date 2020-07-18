@@ -69,8 +69,8 @@ GENERAL COMMANDS                            *bullets-commands*
 :SelectBullet          Selects the bullet list item including the bullet.
 
                                             *bullets-:InsertNewBullet*
-:InsertNewBullet       This is the command being used when you press <CR> in
-                       INSERT mode or `o` in normal mode. It adds the next
+:InsertNewBullet       This is the command being used when you press ,<CR> in
+                       INSERT mode or `,o` in normal mode. It adds the next
                        bullet list item based on the one in the current line.
 
                                             *bullets-:RenumberSelection*
@@ -85,13 +85,13 @@ GENERAL COMMANDS                            *bullets-commands*
 
                                             *bullets-:BulletDemote*
 :BulletDemote          Demotes the current bullet by indenting it and changing
-                       its bullet type to the next level defined in 
+                       its bullet type to the next level defined in
                        g:bullets_outline_levels. Mapped to <C-t> in INSERT
                        mode and `>>` in NORMAL mode.
 
                                             *bullets-:BulletPromote*
-:BulletPromote         Promotes the current bullet by unindenting it and 
-                       changing its bullet type to the next level defined in 
+:BulletPromote         Promotes the current bullet by unindenting it and
+                       changing its bullet type to the next level defined in
                        g:bullets_outline_levels. Mapped to <C-d> in INSERT
                        mode and `<<` in NORMAL mode by default.
 
@@ -280,10 +280,10 @@ When a supported file type is opened (see |bullets-configuration|) you can start
 a bullet list by typing the first member of a supported bullet list type (see
 |bullets|).
 
-Pressing the <CR> key in insert mode at the end of a bullet list item will
+Pressing the ,<CR> key in insert mode at the end of a bullet list item will
 insert the next bullet.
 
-Pressing the <CR> key when a bullet is empty (e.g. `- `) will start a new line
+Pressing the ,<CR> key when a bullet is empty (e.g. `- `) will start a new line
 and erase the empty bullet.
 
 In normal mode you may press `o` to open a new line which will also create the
@@ -325,7 +325,7 @@ INSERT MODE
 
 
                                             *bullets-i_<cr>*
-<CR>        Inserts a new bullet list item based on the current line bullet
+,<CR>        Inserts a new bullet list item based on the current line bullet
             format. This is a local mapping and will only affect the current
             buffer if it has a supported file type (see |bullets-configuration|).
 
@@ -344,7 +344,7 @@ INSERT MODE
 NORMAL MODE
 
                                             *bullets-o*
-o           Inserts a new bullet list item. Same as <CR> in INSERT MODE.
+,o           Inserts a new bullet list item. Same as ,<CR> in INSERT MODE.
 
                                             *bullets-gN*
 gN          Renumbers entire list containing the current cursor position.

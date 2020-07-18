@@ -991,10 +991,10 @@ augroup TextBulletsMappings
 
   if g:bullets_set_mappings
     " automatic bullets
-    call s:add_local_mapping('inoremap', '<cr>', '<C-]><C-R>=<SID>insert_new_bullet()<cr>')
-    call s:add_local_mapping('inoremap', '<C-cr>', '<cr>')
+    " call s:add_local_mapping('inoremap', ',<cr>', '<C-]><C-R>=<SID>insert_new_bullet()<cr>')
+    call s:add_local_mapping('inoremap', '<C-cr>', '<C-]><C-R>=<SID>insert_new_bullet()<cr>')
 
-    call s:add_local_mapping('nnoremap', 'o', ':call <SID>insert_new_bullet()<cr>')
+    call s:add_local_mapping('nnoremap', ',o', ':call <SID>insert_new_bullet()<cr>')
 
     " Renumber bullet list
     call s:add_local_mapping('vnoremap', 'gN', ':RenumberSelection<cr>')
@@ -1005,11 +1005,11 @@ augroup TextBulletsMappings
 
     " Promote and Demote outline level
     call s:add_local_mapping('inoremap', '<C-t>', '<C-o>:BulletDemote<cr>')
-    call s:add_local_mapping('nnoremap', '>>', ':BulletDemote<cr>')
+    " call s:add_local_mapping('nnoremap', '>>', ':BulletDemote<cr>')
     call s:add_local_mapping('inoremap', '<C-d>', '<C-o>:BulletPromote<cr>')
-    call s:add_local_mapping('nnoremap', '<<', ':BulletPromote<cr>')
-    call s:add_local_mapping('vnoremap', '>', ':BulletDemoteVisual<cr>')
-    call s:add_local_mapping('vnoremap', '<', ':BulletPromoteVisual<cr>')
+    " call s:add_local_mapping('nnoremap', '<<', ':BulletPromote<cr>')
+    " call s:add_local_mapping('vnoremap', '>', ':BulletDemoteVisual<cr>')
+    " call s:add_local_mapping('vnoremap', '<', ':BulletPromoteVisual<cr>')
   end
 augroup END
 " --------------------------------------------------------- }}}

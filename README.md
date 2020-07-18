@@ -1,6 +1,6 @@
 ![Bullets.vim](img/bullets-vim-logo.svg)
 
-[![Build Status](https://travis-ci.org/dkarter/bullets.vim.svg?branch=master)](https://travis-ci.org/dkarter/bullets.vim) 
+[![Build Status](https://travis-ci.org/dkarter/bullets.vim.svg?branch=master)](https://travis-ci.org/dkarter/bullets.vim)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
@@ -175,7 +175,7 @@ let g:bullets_nested_checkboxes = 1 " default = 1
 "   - [ ] child bullet  [ type <leader>x ]
 "     - [ ] sub-child
 "   - [ ] child bullet
-" 
+"
 " Result:
 " - [o] first bullet   [ <- indicates partial completion of sub-tasks ]
 "   - [X] child bullet
@@ -216,18 +216,18 @@ let g:bullets_checkbox_partials_toggle = 1 " default = 1
 " - [o] partially checked  [ type <leader>x ]
 "   - [x] sub bullet
 "   - [ ] sub bullet
-" 
+"
 " Result:
 " - [x] checked
 "   - [x] sub bullet
 "   - [x] sub bullet
-" 
+"
 " Example 2:
 let g:bullets_checkbox_partials_toggle = 0
 " - [o] partially checked  [ type <leader>x ]
 "   - [x] sub bullet
 "   - [ ] sub bullet
-" 
+"
 " Result:
 " - [ ] checked
 "   - [ ] sub bullet
@@ -237,7 +237,7 @@ let g:bullets_checkbox_partials_toggle = 0
 # Mappings
 
 * Insert new bullet in INSERT mode: `<cr>` (Return key)
-* Same as <cr> in case you want to unmap <cr> in INSERT mode (compatibility depends on your terminal emulator): `<C-cr>`
+* Same as <cr> in case you want to unmap <cr> in INSERT mode (compatibility depends on your terminal emulator): `<C-cr>`. Some terminal emulator can't correctlly recognize the keycode for <C-CR>. You can refer to [this article](https://stackoverflow.com/a/42461580/77131) to solve.
 * Insert new bullet in NORMAL mode: `o`
 * Renumber current visual selection: `gN`
 * Renumber entire bullet list containing the cursor in NORMAL mode: gN
@@ -260,7 +260,7 @@ let g:bullets_set_mappings = 0
 Add a leader key before default mappings:
 
 ```vim
-let g:bullets_mapping_leader = '<M-b>' 
+let g:bullets_mapping_leader = '<M-b>'
 " Set <M-b> to the leader before all default mappings:
 " Example: renumbering becomes `<M-b>gN` instead of just `gN`
 ```
