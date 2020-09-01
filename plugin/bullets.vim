@@ -994,7 +994,7 @@ augroup TextBulletsMappings
     " call s:add_local_mapping('inoremap', ',<cr>', '<C-]><C-R>=<SID>insert_new_bullet()<cr>')
     call s:add_local_mapping('inoremap', '<C-cr>', '<C-]><C-R>=<SID>insert_new_bullet()<cr>')
 
-    call s:add_local_mapping('nnoremap', ',o', ':call <SID>insert_new_bullet()<cr>')
+    call s:add_local_mapping('nnoremap', '<LEADER>o', ':call <SID>insert_new_bullet()<cr>')
 
     " Renumber bullet list
     call s:add_local_mapping('vnoremap', 'gN', ':RenumberSelection<cr>')
